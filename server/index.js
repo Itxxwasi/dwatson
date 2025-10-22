@@ -18,7 +18,7 @@ console.log('⏰ Server start time:', new Date().toISOString());
 
 const app = express();
 const port = process.env.PORT || 5000;
-const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URL || 'mongodb+srv://dawatson_pharmacy:Mrwasi%2F123456@cluster0.b89db9l.mongodb.net/sales_dashboard?retryWrites=true&w=majority&appName=Cluster0';
+const mongoUri = process.env.MONGODB_URI || process.env.MONGO_URL || 'mongodb+srv://testing_db_user:EXMHYtFRbOr9tcbX@cluster0.hpxspu4.mongodb.net/sales_dashboard?retryWrites=true&w=majority&appName=Cluster0';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -1421,4 +1421,5 @@ app.use('*', (req, res) => {
     res.sendFile(path.join(clientDir, 'index.html'));
   }
 });
+
 
